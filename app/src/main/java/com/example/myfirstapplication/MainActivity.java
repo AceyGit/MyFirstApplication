@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    static double trunc(double x, int y) {
+        x = x* Math.pow(10, y);
+        x = Math.floor(x);
+        x = x / Math.pow(10, y);
+        return x;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 } catch( Exception e) {
                     i = 0.0;
                 }
-            Double r = i + j;
-            Res.setText(String.valueOf(r));
+                Double r = i + j;
+                r = trunc(r, 2);
+                Res.setText(String.valueOf(r));
             }
         });
         minus.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     i = 0.0;
                 }
                 Double r = i - j;
+                r = trunc(r, 2);
                 Res.setText(String.valueOf(r));
             }
         });
@@ -79,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     i = 0.0;
                 }
                 Double r = i * j;
+                r = trunc(r, 2);
                 Res.setText(String.valueOf(r));
             }
         });
@@ -99,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                     i = 0.0;
                 }
                 Double r = i / j;
+                r = trunc(r, 2);
                 Res.setText(String.valueOf(r));
             }
         });
