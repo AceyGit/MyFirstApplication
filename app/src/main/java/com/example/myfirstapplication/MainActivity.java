@@ -39,11 +39,13 @@ public class MainActivity extends AppCompatActivity {
                     j = Double.parseDouble(String.valueOf(Number2.getText()));
                 } catch( Exception e) {
                     j = 0.0;
+                    System.out.println(e);
                 }
                 try {
                     i = Double.parseDouble(String.valueOf(Number1.getText()));
                 } catch( Exception e) {
                     i = 0.0;
+                    System.out.println(e);
                 }
                 Double r = i + j;
                 r = trunc(r, 2);
@@ -59,11 +61,13 @@ public class MainActivity extends AppCompatActivity {
                     j = Double.parseDouble(String.valueOf(Number2.getText()));
                 } catch( Exception e) {
                     j = 0.0;
+                    System.out.println(e);
                 }
                 try {
                     i = Double.parseDouble(String.valueOf(Number1.getText()));
                 } catch( Exception e) {
                     i = 0.0;
+                    System.out.println(e);
                 }
                 Double r = i - j;
                 r = trunc(r, 2);
@@ -80,11 +84,13 @@ public class MainActivity extends AppCompatActivity {
                     j = Double.parseDouble(String.valueOf(Number2.getText()));
                 } catch( Exception e) {
                     j = 0.0;
+                    System.out.println(e);
                 }
                 try {
                     i = Double.parseDouble(String.valueOf(Number1.getText()));
                 } catch( Exception e) {
                     i = 0.0;
+                    System.out.println(e);
                 }
                 Double r = i * j;
                 r = trunc(r, 2);
@@ -101,11 +107,13 @@ public class MainActivity extends AppCompatActivity {
                     j = Double.parseDouble(String.valueOf(Number2.getText()));
                 } catch( Exception e) {
                     j = 0.0;
+                    System.out.println(e);
                 }
                 try {
                     i = Double.parseDouble(String.valueOf(Number1.getText()));
                 } catch( Exception e) {
                     i = 0.0;
+                    System.out.println(e);
                 }
                 Double r = i / j;
                 r = trunc(r, 2);
